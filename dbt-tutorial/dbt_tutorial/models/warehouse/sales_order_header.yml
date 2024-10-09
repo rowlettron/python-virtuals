@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: sales_order_header
+    description: "Sales Order Header Table"
+    columns: 
+      - name: salesorderid
+        description: "sales order id - integer"
+
+      - name: revisionnumber
+        description: "revision number - smallint"
+      
+      - name: orderdate
+        description: "Date of order - timestamp with out timezone"
+
+      - name: duedate
+        description: "Date order is due - timestamp with out timezone"
+        tests:
+          - greater_than_column:
+              greater_than_column_name: orderdate
+
+      - name: shipdate
+        description: "Date order shipped - timestamp with out timezone"
+
+      - name: status
+        description: "Status of order - smallint"
+        # tests: 
+        #  - accepted_values:
+        #      values: [1,2,3,4]
+
+      - name: onlineorderflag
+        description: "Was order placed online"
+
+      - name: purchaseordernumber
+        description: "PO for order"
+      
+      - name: subtotal
+        description: "Total of order before taxes - numeric"
+
+      - name: taxamt
+        description: "Tax amount of the order - numeric"
+
+      - name: freight
+        description: "Dollar amount for freight - numeric"
+
+      - name: totaldue
+        description: "Total amount due for order - numeric"
+
+      - name: row_id
+        description: "Unique row identifier"
+        # tests:
+        #   - not null
+        #   - unique
+
+      - name: modifieddate
+        description: "Date order last modified - timezone with out timezone"
+
