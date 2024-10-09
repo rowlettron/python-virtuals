@@ -131,6 +131,7 @@ venv.bak/
 /test-env/Scripts
 /test-env/Include
 /test-env/Lib 
+/test-env/share 
 
 # Spyder project settings
 .spyderproject
