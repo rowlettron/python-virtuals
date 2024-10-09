@@ -11,3 +11,4 @@ dbt-sqlserver
 dbt-mysql
 dbt-redshift
 dbt-spark
+dbt-duckdb
