@@ -1,0 +1,13 @@
+numpy
+pandas
+requests
+seaborn
+scikit-learn
+matplotlib
+bs4
+dbt-core
+dbt-postgres
+dbt-sqlserver
+dbt-mysql
+dbt-redshift
+dbt-spark
