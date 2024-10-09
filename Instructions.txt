@@ -1,1 +1,6 @@
-1.  Create new python virtual for project
+1.  Create new python environment for project inside of project folder
+2.  Install python libraries from requirements.txt (pip install -r requirements.txt)
+3.  Run dbt init
+4.  Create models inside the models folder
+    a.  Create .yml file with all the resources that are needed
+    b.  Create .sql files that will contain the data
