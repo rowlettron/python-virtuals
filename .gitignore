@@ -128,6 +128,10 @@ ENV/
 env.bak/
 venv.bak/
 
+/test-env/Scripts
+/test-env/Include
+/test-env/Lib 
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -158,3 +162,4 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
