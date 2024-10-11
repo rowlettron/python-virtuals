@@ -5,53 +5,53 @@ models:
     description: "Sales Order Header Table"
     columns: 
       - name: salesorderid
-        description: "sales order id - integer"
+        description: "sales order id"
 
       - name: revisionnumber
-        description: "revision number - smallint"
-      
+        description: "revision number"
+
       - name: orderdate
-        description: "Date of order - timestamp with out timezone"
+        description: ""
 
       - name: duedate
-        description: "Date order is due - timestamp with out timezone"
+        description: ""
         tests:
           - greater_than_column:
               greater_than_column_name: orderdate
 
       - name: shipdate
-        description: "Date order shipped - timestamp with out timezone"
+        description: ""
 
       - name: status
-        description: "Status of order - smallint"
-        # tests: 
-        #  - accepted_values:
-        #      values: [1,2,3,4]
+        description: ""
+        # tests:
+        #   - accepted_values:
+        #       values: [1,2,3,4]
 
       - name: onlineorderflag
-        description: "Was order placed online"
+        description: ""
 
       - name: purchaseordernumber
-        description: "PO for order"
-      
+        description: ""
+
       - name: subtotal
-        description: "Total of order before taxes - numeric"
+        description: ""
 
       - name: taxamt
-        description: "Tax amount of the order - numeric"
+        description: ""
 
       - name: freight
-        description: "Dollar amount for freight - numeric"
+        description: ""
 
       - name: totaldue
-        description: "Total amount due for order - numeric"
+        description: ""
 
       - name: row_id
-        description: "Unique row identifier"
-        # tests:
-        #   - not null
-        #   - unique
+        description: "Row Identifier"
+        tests: 
+          - not_null
+          - unique
 
       - name: modifieddate
-        description: "Date order last modified - timezone with out timezone"
+        description: ""
 

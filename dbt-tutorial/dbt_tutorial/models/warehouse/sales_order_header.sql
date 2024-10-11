@@ -12,4 +12,5 @@ SELECT salesorderid,
        totaldue,
        rowguid as row_id,
        modifieddate
-FROM {{source('sales','salesorderheader') }}
+FROM {{ source('sales','salesorderheader') }}
+
